@@ -52,13 +52,7 @@ app.post("/newOrder", async (req, res) => {
 });
 
 // Start server and MongoDB connection
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log("App Started");
-  mongoose.connect(uri)
-    .then(() => {
-      console.log("MongoDB connected successfully");
-    })
-    .catch((err) => {
-      console.error("Error connecting to MongoDB:", err);
-    });
+    console.log(`Server running on port ${PORT}`);
 });
