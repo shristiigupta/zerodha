@@ -15,7 +15,7 @@ const Signup = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3002/api/auth/signup", {
+      const response = await axios.post("https://zerodha1.onrender.com/api/auth/signup", {
         email,
         password,
         username,
@@ -28,7 +28,7 @@ localStorage.setItem("username", response.data.username);
 
         setSuccess(true);
         setTimeout(() => {
-          window.location.href = "http://localhost:3003"; // Redirect to login page after successful signup
+          window.location.href = "https://zerodha-clonee-dashboard.netlify.app/"; // Redirect to login page after successful signup
         }, 2000);
       } else {
         setError(response.data.message);

@@ -18,7 +18,7 @@ const app = express();
 
 // CORS middleware configuration
 app.use(cors({
-  origin: ["http://localhost:3001", "http://localhost:3003"],  // Adjust frontend URL if necessary
+  origin: ["https://zerodha-clonee.netlify.app/", "https://zerodha-clonee-dashboard.netlify.app/"],  // Adjust frontend URL if necessary
   credentials: true,                // Allow credentials and cookies
 }));
 
