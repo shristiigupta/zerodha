@@ -11,12 +11,14 @@ const { HoldingsModel } = require("./model/HoldingsModel");
 const { PositionsModel } = require("./model/PositionsModel");
 const { OrdersModel } = require("./model/OrdersModel");
 
+const PORT = process.env.PORT || 3002;
+const uri = process.env.MONGO_URL;
 
 const app = express();
 
 // CORS middleware configuration
 app.use(cors({
-  origin: ["https://zerodha-clonee.netlify.app/", "https://zerodha-clonee-dashboard.netlify.app/"],  // Adjust frontend URL if necessary
+  origin: ["https://zerodha-clonee.netlify.app", "https://zerodha-clonee-dashboard.netlify.app"],  // Adjust frontend URL if necessary
   credentials: true,                // Allow credentials and cookies
 }));
 
@@ -50,7 +52,14 @@ app.post("/newOrder", async (req, res) => {
 });
 
 // Start server and MongoDB connection
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+mongoose.connect(uri)
+  .then(() => {
+    console.log("MongoDB connected successfully");
+
+    app.listen(PORT, () => {
+      console.log(`Server running on port ${PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.error("Error connecting to MongoDB:", err);
+  });
