@@ -28,7 +28,7 @@ localStorage.setItem("username", response.data.username);
 
         setSuccess(true);
         setTimeout(() => {
-          window.location.href = "https://zerodha-clonee-dashboard.netlify.app/"; // Redirect to login page after successful signup
+          window.location.href = "https://zerodha-clonee-dashboard.netlify.app"; // Redirect to login page after successful signup
         }, 2000);
       } else {
         setError(response.data.message);

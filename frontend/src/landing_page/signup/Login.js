@@ -26,7 +26,7 @@ localStorage.setItem("username", response.data.username);
         setSuccess(true);
         // Optionally, redirect the user to the dashboard or home page
         setTimeout(() => {
-          window.location.href = "https://zerodha-clonee-dashboard.netlify.app/"; // Redirect to the dashboard page
+          window.location.href = "https://zerodha-clonee-dashboard.netlify.app"; // Redirect to the dashboard page
         }, 2000);
       } else {
         setError(response.data.message);
