@@ -73,12 +73,19 @@ module.exports.Login = async (req, res) => {
       httpOnly: false, // Set to true in production for security
     });
 
-    // Send success response
-    return res.status(200).json({ message: "User logged in successfully", success: true });
+    // ✅ Return success and redirect URL
+    return res.status(200).json({
+      message: "User logged in successfully",
+      success: true,
+      username: user.username,
+      redirectUrl: "https://zerodha-clonee-dashboard.netlify.app", // Ensure this is correct
+    });
+
   } catch (error) {
     console.error(error);
-    return res.status(500).json({ message: "Something went wrong. Please try again." }); // Descriptive error message
+    return res.status(500).json({ message: "Something went wrong. Please try again." });
   }
 };
+
 
 

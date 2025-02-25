@@ -12,22 +12,25 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-
+  
     try {
-      const response = await axios.post("https://zerodha1.onrender.com/api/auth/login", {
-        email,
-        password,
-      }, { withCredentials: true });
-
+      const response = await axios.post(
+        "https://zerodha1.onrender.com/api/auth/login",
+        { email, password },
+        { withCredentials: true }
+      );
+  
       if (response.data.success) {
-        // After successful login
+        // Store username
         localStorage.setItem("username", response.data.username);
-
+  
         setSuccess(true);
-        // Optionally, redirect the user to the dashboard or home page
+  
+        // ✅ Use redirectUrl from backend response
         setTimeout(() => {
-          window.location.href = "https://zerodha-clonee-dashboard.netlify.app"; // Redirect to the dashboard page
+          window.location.href = response.data.redirectUrl;
         }, 2000);
+  
       } else {
         setError(response.data.message);
       }
@@ -35,6 +38,7 @@ const Login = () => {
       setError("Something went wrong. Please try again.");
     }
   };
+  
 
   const redirectToSignup = () => {
     navigate("/signup"); // Redirect to signup page
