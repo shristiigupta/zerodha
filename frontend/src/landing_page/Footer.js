@@ -6,50 +6,50 @@ function Footer() {
       <div className="container border-top mt-5">
         <div className="row mt-5">
           <div className="col-4">
-            <img src="media/images/logo.svg" style={{ width: "50%" }} />
+            <img src="media/images/logo.svg" alt="logo" style={{ width: "50%" }} />
             <p className="mt-3 fs-0.2">
               &copy; 2010 - 2024, Not Zerodha Broking Ltd. All rights reserved.
             </p>
           </div>
           <div className="col">
             <p className="fs-4">Company</p>
-            <a href="" style={{ textDecoration: "none", color: "#444"}}>About</a>
+            <a href="#" style={{ textDecoration: "none", color: "#444" }}>About</a>
             <br />
-            <a href="" style={{ textDecoration: "none", color: "#444"}}>Products</a>
+            <a href="#" style={{ textDecoration: "none", color: "#444" }}>Products</a>
             <br />
-            <a href="" style={{ textDecoration: "none", color: "#444"}}>Pricing</a>
+            <a href="#" style={{ textDecoration: "none", color: "#444" }}>Pricing</a>
             <br />
-            <a href="" style={{ textDecoration: "none", color: "#444"}}>Referral programme</a>
+            <a href="#" style={{ textDecoration: "none", color: "#444" }}>Referral programme</a>
             <br />
-            <a href="" style={{ textDecoration: "none", color: "#444"}}>Careers</a>
+            <a href="#" style={{ textDecoration: "none", color: "#444" }}>Careers</a>
             <br />
-            <a href="" style={{ textDecoration: "none", color: "#444"}}>Zerodha.tech</a>
+            <a href="#" style={{ textDecoration: "none", color: "#444" }}>Zerodha.tech</a>
             <br />
-            <a href="" style={{ textDecoration: "none", color: "#444"}}>Press & media</a>
+            <a href="#" style={{ textDecoration: "none", color: "#444" }}>Press & media</a>
             <br />
-            <a href="" style={{ textDecoration: "none", color: "#444"}}>Zerodha cares (CSR)</a>
+            <a href="#" style={{ textDecoration: "none", color: "#444" }}>Zerodha cares (CSR)</a>
             <br />
           </div>
           <div className="col">
             <p className="fs-4">Support</p>
-            <a href="" style={{ textDecoration: "none", color: "#444"}}>Contact</a>
+            <a href="#" style={{ textDecoration: "none", color: "#444" }}>Contact</a>
             <br />
-            <a href="" style={{ textDecoration: "none", color: "#444"}}>Support portal</a>
+            <a href="#" style={{ textDecoration: "none", color: "#444" }}>Support portal</a>
             <br />
-            <a href="" style={{ textDecoration: "none", color: "#444"}}>Z-Connect blog</a>
+            <a href="#" style={{ textDecoration: "none", color: "#444" }}>Z-Connect blog</a>
             <br />
-            <a href="" style={{ textDecoration: "none", color: "#444"}}>List of charges</a>
+            <a href="#" style={{ textDecoration: "none", color: "#444" }}>List of charges</a>
             <br />
-            <a href="" style={{ textDecoration: "none", color: "#444"}}>Downloads & resources</a>
+            <a href="#" style={{ textDecoration: "none", color: "#444" }}>Downloads & resources</a>
             <br />
           </div>
           <div className="col">
             <p className="fs-4">Account</p>
-            <a href="" style={{ textDecoration: "none", color: "#444"}}>Open an account</a>
+            <a href="#" style={{ textDecoration: "none", color: "#444" }}>Open an account</a>
             <br />
-            <a href="" style={{ textDecoration: "none", color: "#444"}}>Fund transfer</a>
+            <a href="#" style={{ textDecoration: "none", color: "#444" }}>Fund transfer</a>
             <br />
-            <a href="" style={{ textDecoration: "none", color: "#444"}}>60 day challenge</a>
+            <a href="#" style={{ textDecoration: "none", color: "#444" }}>60 day challenge</a>
             <br />
           </div>
         </div>
@@ -81,19 +81,19 @@ function Footer() {
           </p>
 
           <p>
-            "Prevent unauthorised transactions in your account. Update your
+            "Prevent unauthorized transactions in your account. Update your
             mobile numbers/email IDs with your stock brokers. Receive
             information of your transactions directly from Exchange on your
             mobile/email at the end of the day. Issued in the interest of
-            investors. KYC is one time exercise while dealing in securities
+            investors. KYC is one-time exercise while dealing in securities
             markets - once KYC is done through a SEBI registered intermediary
-            (broker, DP, Mutual Fund etc.), you need not undergo the same
+            (broker, DP, Mutual Fund, etc.), you need not undergo the same
             process again when you approach another intermediary." Dear
             Investor, if you are subscribing to an IPO, there is no need to
             issue a cheque. Please write the Bank account number and sign the
             IPO application form to authorize your bank to make payment in case
-            of allotment. In case of non allotment the funds will remain in your
-            bank account. As a business we don't give stock tips, and have not
+            of allotment. In case of non-allotment, the funds will remain in your
+            bank account. As a business, we don't give stock tips and have not
             authorized anyone to trade on behalf of others. If you find anyone
             claiming to be part of Zerodha and offering such services, please
             create a ticket here.
