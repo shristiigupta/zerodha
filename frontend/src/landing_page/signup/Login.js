@@ -26,11 +26,11 @@ const Login = () => {
   
         setSuccess(true);
   
-        // ✅ Use redirectUrl from backend response
+        // ✅ Redirect to the external dashboard URL
         setTimeout(() => {
-          window.location.href = response.data.redirectUrl;
+          window.location.href = "https://zerodha-clonee-dashboard.netlify.app/";
         }, 2000);
-  
+        
       } else {
         setError(response.data.message);
       }
@@ -38,6 +38,7 @@ const Login = () => {
       setError("Something went wrong. Please try again.");
     }
   };
+  
   
 
   const redirectToSignup = () => {
