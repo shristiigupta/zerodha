@@ -22,15 +22,18 @@ const Login = () => {
   
       if (response.data.success) {
         // Store username
+        console.log(response.data.redirectUrl);
+
+
         localStorage.setItem("username", response.data.username);
   
         setSuccess(true);
   
-        // ✅ Redirect to the external dashboard URL
+        // ✅ Redirect using backend response
         setTimeout(() => {
-          window.location.href = "https://zerodha-clonee-dashboard.netlify.app/";
+          window.location.href = response.data.redirectUrl;  // Ensure this is used
         }, 2000);
-        
+  
       } else {
         setError(response.data.message);
       }
