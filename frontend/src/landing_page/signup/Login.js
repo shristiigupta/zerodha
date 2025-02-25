@@ -14,14 +14,14 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://zerodha1.onrender.com/auth/login", {
+      const response = await axios.post("https://zerodha1.onrender.com/api/auth/login", {
         email,
         password,
       }, { withCredentials: true });
 
       if (response.data.success) {
         // After successful login
-localStorage.setItem("username", response.data.username);
+        localStorage.setItem("username", response.data.username);
 
         setSuccess(true);
         // Optionally, redirect the user to the dashboard or home page
